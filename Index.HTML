@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="error_message"></p>
+    <h3>What is 1 + 1 ???</h3>
+    <button onclick="myfunction()"><p id="A">LOL {*^*}</p></button>
+    <h3>What is 2 + 2 ???</h3>
+    <button onclick="minefunction()"><p id="B">hello!!! Who is your maths teacher???</p></button>
+    <h3>What is 2 X 2 ???</h3>
+    <button onclick="whichfunction()"><p id="C">Its Easy</p></button>
+    <script>
+        try {
+            alert("Welcome Human (<_<)");
+        }
+        catch(err) {
+            document.getElementById("error_message").innerHTML = err;
+        }
+        alert("Always Be a Human (>_>)")
+        alert("Just For Fun (*_*)")
+
+        function myfunction() {
+        var x = 1
+        var y = 1
+        document.getElementById("A").innerHTML = String(x) + String(y);
+        }
+
+        function minefunction() {
+            var a = 2
+            var b = 2
+            document.getElementById("B").innerHTML = a + b;
+        }
+
+        function whichfunction() {
+            add = (d,k)=> d*k;
+            document.getElementById("C").innerHTML = add(2,2);
+        }
+    </script>
+</body>
+</html>
